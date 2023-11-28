@@ -1,3 +1,25 @@
-.container {
-    border: 500px solid blue;
+.container-1 {
+    border: 5px solid blue;
+    height: 500px;
+    display: flex;
+    /*flex-direction: column;
+    flex-flow: row wrap;*/
+    /*flex-wrap: wrap;*/
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-1 > img {
+    flex-grow: 41;
+}
+
+#child-1 {
+    border: 2px solid indigo;
+    order: 3;
+    align-self: flex-start;
+}
+
+#child-2 {
+    border: 2px solid orangered;
+    order: 1;
 }
