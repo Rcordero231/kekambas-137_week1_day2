@@ -15,6 +15,7 @@
         <a href="https://www.w3schools.com/css/css_selectors.asp" target="_blank">CSS Selectors</a>
         <a href="https://www.w3schools.com/css/css_display_visibility.asp" target="_blank">CSS Displays</a>
         <a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">CSS Positions</a>
+        <a href="./flex.html">Home</a>
     </div>
 
     <section>
@@ -71,7 +72,8 @@
 
         </div>
         <div class="selectors">
-            <h3>Pseduo-Element Selectors</h3>
+            <h3 id="after-example">Pseduo-Element Selectors</h3>
+            <img src="https://picsum.photos/100" alt="">
 
             <p id="first-line">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
@@ -119,6 +121,7 @@
             <img src="https://picsum.photos/200?random=13" alt="">
             <img src="https://picsum.photos/200?random=14" alt="">
         </div>
+        <button id="test">Click Me</button>
     </section>
 
     <section class="positions">
@@ -130,6 +133,15 @@
             <img src="https://picsum.photos/200?random=22" alt="" id="img-3">
         </div>
     </section>
+
+    <script>
+        let button = document.getElementById('test');
+        button.addEventListener('click', () => {
+            let middlePhoto = document.getElementById('middle');
+            middlePhoto.style.display = middlePhoto.style.display === 'none' ? 'inline' : 'none'
+        })
+    </script>
+<button id="test">Click Me</button>
     
 
 </body>
